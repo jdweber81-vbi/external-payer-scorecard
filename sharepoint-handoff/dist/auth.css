@@ -1,0 +1,41 @@
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-actions form {
+  margin: 0;
+}
+
+.logout-button {
+  border: 1px solid #dce4ec;
+  background: #fff;
+  color: #005eb8;
+  border-radius: 8px;
+  padding: 7px 11px;
+  font-size: .72rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.role-pill {
+  border: 1px solid #dce4ec;
+  background: #f7fafc;
+  color: #40536b;
+  border-radius: 999px;
+  padding: 7px 11px;
+  font-size: .72rem;
+  font-weight: 700;
+}
+
+body.read-only #uploadButton,
+body.read-only #saveWeights,
+body.read-only #resetWeights,
+body.read-only [data-upload],
+body.read-only [data-delete-ref],
+body.read-only .metric-weight,
+body.read-only .cat-weight,
+body.read-only [data-split-category] {
+  display: none !important;
+}
